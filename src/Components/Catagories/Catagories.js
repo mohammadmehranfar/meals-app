@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import { myContext } from '../Context/Context';
+import './Catagories.scss'
 const Catagories = () => {
     const {catagories,fetchCatagories} = useContext(myContext);
     useEffect(() => {
@@ -9,7 +10,7 @@ const Catagories = () => {
     return (
         <div className='catagories'>
             {catagories?.map(e => (
-                <div className = '' key = {e.idCategory}>
+                <div key = {e.idCategory}>
                     <img src = {e.strCategoryThumb} alt = 'category'/>
                     <h4>{e.strCategory}</h4>
                 </div>

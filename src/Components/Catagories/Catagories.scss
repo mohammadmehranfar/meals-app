@@ -1,0 +1,29 @@
+.catagories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #000;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    cursor: pointer;
+    img{
+        width: 170px;
+        margin: 5px;
+        transition: all 0.7 ease;
+        &:hover{
+            transform: scale(1.75);
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h4{
+        align-self: center;
+    }
+}
