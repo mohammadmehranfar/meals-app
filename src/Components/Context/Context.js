@@ -10,11 +10,17 @@ export const AppContext = ({children}) => {
         axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`)
         .then(res =>{
             console.log(res.data.meals);
-            return res.data;
+            setMeals(res.data.meals);
+        })
+    },[]);
+    const fetchCatagories = useCallback(() => {
+        axios.get(`https://www.themealdb.com/api/json/v1/1/categories.php`)
+        .then(res => {
+            setCatagories(res.data.categories);
         })
     },[])
     return (
-        <myContext.Provider value = {{fetchHomePageMeals}}>
+        <myContext.Provider value = {{meals,fetchHomePageMeals,catagories,fetchCatagories}}>
             {children}
         </myContext.Provider>
     )

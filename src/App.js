@@ -11,7 +11,7 @@ const App = () => {
             <Router>
                 <Navbar/>
                 <Switch>
-                    <Route path = '/' component = {HomePage}/>
+                    <Route exact path = '/' component = {HomePage}/>
                     <Route exact path = '/catagories' component = {Catagories}/>
                     <Route exact path = '/random' component = {RandomMeal}/>
                 </Switch>

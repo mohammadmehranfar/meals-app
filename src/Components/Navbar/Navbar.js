@@ -10,8 +10,8 @@ const Navbar = () => {
             <div className='navbar-links'>
                 <ul>
                     <Link to = '/'><li>Home</li></Link>
-                    <Link to = '/catagories'><li>Catagories</li></Link>
-                    <Link to = '/random'><li>Random</li></Link>
+                    <Link to = './catagories'><li>Catagories</li></Link>
+                    <Link to = './random'><li>Random</li></Link>
                 </ul>
             </div>
         </div>
