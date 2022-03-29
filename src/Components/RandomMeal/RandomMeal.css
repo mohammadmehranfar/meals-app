@@ -1,0 +1,78 @@
+.random {
+  width: 100%;
+  height: 80vh;
+  background: #000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.random img {
+  width: 250px;
+  border: 1px solid #ccc;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.random img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.random-grid-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.random-grid-control button {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.random-grid-control button:hover {
+  background: #ccc;
+  color: #000;
+}
+
+.random-grid-instructions {
+  text-align: center;
+  padding: 10px;
+}
+
+.random-grid-instructions p {
+  font-size: 18px;
+}
+/*# sourceMappingURL=RandomMeal.css.map */

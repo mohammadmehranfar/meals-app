@@ -18,9 +18,15 @@ export const AppContext = ({children}) => {
         .then(res => {
             setCatagories(res.data.categories);
         })
-    },[])
+    },[]);
+    const fetchRandomMeal = useCallback(() => {
+        axios.get(`https://www.themealdb.com/api/json/v1/1/random.php`)
+        .then(res => {
+            setRandomMeal(res.data.meals);
+        })
+    },[]);
     return (
-        <myContext.Provider value = {{meals,fetchHomePageMeals,catagories,fetchCatagories}}>
+        <myContext.Provider value = {{meals,fetchHomePageMeals,catagories,fetchCatagories,fetchRandomMeal,randomMeal}}>
             {children}
         </myContext.Provider>
     )
